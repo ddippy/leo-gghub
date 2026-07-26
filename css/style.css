@@ -1,11 +1,9 @@
 :root{
-  /* โทนสีหลัก (ไม่เกิน 3 สี) */
   --red-blood: #660000;
   --red-blood-deep: #16241f;
   --gold: #e3ae4a;
   --rose: #c17a6a;
 
-  /* สีกลาง (neutral) */
   --cream: #f4efe4;
   --cream-soft: #ece4d3;
   --ink: #24302c;
@@ -48,9 +46,7 @@ h1, h2, h3, h4{
   line-height: 1.2;
 }
 
-/* =========================================================
-   NAVBAR  (ใช้ Flexbox จุดที่ 1)
-   ========================================================= */
+/* NAVBAR  (ใช้ Flexbox จุดที่ 1) */
 
 .site-header{
   position: sticky;
@@ -109,9 +105,7 @@ h1, h2, h3, h4{
   color: var(--cream);
 }
 
-/* =========================================================
-   HERO SECTION  (ใช้ Flexbox จุดที่ 2)
-   ========================================================= */
+/* HERO SECTION  (ใช้ Flexbox จุดที่ 2) */
 
 .hero{
   background: var(--red-blood);
@@ -187,9 +181,7 @@ h1, h2, h3, h4{
   color: var(--red-blood);
 }
 
-/* =========================================================
-   FEATURES SECTION  (ใช้ Grid จุดที่ 1)
-   ========================================================= */
+/* FEATURES SECTION  (ใช้ Grid จุดที่ 1) */
 
 .section{
   
@@ -263,8 +255,6 @@ a.feature-card{
 }
 
 
-
-/* dog-ear corner fold — ใช้ซ้ำเป็นลายเซ็นบนการ์ดทุกใบ */
 .feature-card::after,
 .product-card::after{
   content: "";
@@ -300,9 +290,7 @@ a.feature-card{
 }
 
 
-/* =========================================================
-   TESTIMONIALS
-   ========================================================= */
+/* TESTIMONIALS */
 
 .testimonials{
   background: var(--cream-soft);
@@ -351,10 +339,6 @@ a.feature-card{
   color: var(--ink-soft);
 }
 
-/* =========================================================
-   CTA SECTION  (สีพื้นหลังต่างจาก section อื่น)
-   ========================================================= */
-
 .cta{
   background: var(--rose);
   text-align: center;
@@ -389,9 +373,7 @@ a.feature-card{
   font-size: 17px;
 }
 
-/* =========================================================
-   FOOTER
-   ========================================================= */
+/* FOOTER */
 
 .site-footer{
   background: var(--red-blood);
@@ -452,9 +434,7 @@ a.feature-card{
   gap: 8px;
 }
 
-/* =========================================================
-   PAGE HEADER (menu.html / contact.html)
-   ========================================================= */
+/* PAGE HEADER (menu.html / contact.html) */
 
 .page-header{
   background: var(--red-blood);
@@ -692,7 +672,6 @@ a.feature-card{
   border-color: var(--gold);
 }
 
-/* right: form styled like a console / input log rather than a boxed card */
 .console-form{
   background: #fff;
   border: 1px solid var(--border);
@@ -774,111 +753,8 @@ a.feature-card{
   .contact-console{ grid-template-columns: 1fr; }
 }
 
-/* =========================================================
-   PRODUCT DETAIL POPUP (menu.html)
-   ========================================================= */
 
-.product-modal{
-  display: none;
-  position: fixed;
-  inset: 0;
-  z-index: 200;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
-
-.product-modal.is-open{
-  display: flex;
-}
-
-.product-modal-backdrop{
-  position: absolute;
-  inset: 0;
-  background: rgba(22,36,31,0.55);
-}
-
-.product-modal-panel{
-  position: relative;
-  background: var(--cream);
-  border-radius: var(--radius);
-  max-width: 560px;
-  width: 100%;
-  max-height: 85vh;
-  overflow-y: auto;
-  box-shadow: 0 30px 60px rgba(0,0,0,0.3);
-}
-
-.product-modal-close{
-  position: absolute;
-  top: 14px;
-  right: 14px;
-  width: 34px;
-  height: 34px;
-  border: none;
-  border-radius: 50%;
-  background: #fff;
-  color: var(--red-blood);
-  font-size: 20px;
-  line-height: 1;
-  cursor: pointer;
-  transition: background var(--transition), color var(--transition);
-}
-.product-modal-close:hover{
-  background: var(--gold);
-  color: var(--red-blood-deep);
-}
-
-.product-modal-media{
-  background: var(--cream-soft);
-  height: 260px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: var(--radius) var(--radius) 0 0;
-  overflow: hidden;
-}
-
-.product-modal-media img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.product-modal-body{
-  padding: 26px 28px 30px;
-}
-
-.product-modal-body h3{
-  font-size: 19px;
-  margin-bottom: 10px;
-}
-
-.product-modal-body .desc{
-  color: var(--ink-soft);
-  font-size: 14.5px;
-  margin-bottom: 18px;
-}
-
-.product-modal-price{
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 22px;
-}
-
-.product-modal-price .price{
-  font-size: 18px;
-}
-
-.product-modal-body .btn{
-  margin-top: 0;
-  width: 100%;
-}
-
-/* =========================================================
-   RESPONSIVE
-   ========================================================= */
+/* RESPONSIVE */
 
 @media (max-width: 860px){
   .hero .wrap{ flex-direction: column; }
