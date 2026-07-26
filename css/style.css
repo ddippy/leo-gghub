@@ -1,8 +1,3 @@
-/* =========================================================
-   ชายขอบ Bookshop — style.css
-   โทนสีหลัก 3 สี: red-blood green, gold, dusty rose
-   ========================================================= */
-
 :root{
   /* โทนสีหลัก (ไม่เกิน 3 สี) */
   --red-blood: #660000;
@@ -381,6 +376,17 @@ a.feature-card{
 }
 .cta .btn-primary:hover{
   box-shadow: 0 10px 24px rgba(22,36,31,0.35);
+}
+
+/* promotion banner */
+
+.promo-banner{
+  background: var(--gold);
+  color: var(--red-blood-deep);
+  text-align: center;
+  padding: 26px 0;
+  font-weight: 600;
+  font-size: 17px;
 }
 
 /* =========================================================
